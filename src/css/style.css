@@ -1,11 +1,46 @@
 
+.navbar{
+  
+  color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 10vh;
+  float: right;
+
+}
+.navbar ul{
+    padding: 0%;
+    margin: 0%;
+    list-style: none;
+    display:flex;
+    gap: 2rem;
+   
+  
+}
+.navbar li.active{
+    background-color: #395C64;
+    padding: 8px;
+    justify-content: flex-end;
+   
+    
+}
+.navbar li:hover{
+    background-color:#C8C8C8 ;
+}
+body{
+    background-color:#C8C8C8;
+}
+
 
 
 
 img {
-    max-width: 150%;
-}
-.samplepicture{
+   width: 85%;
+   height: 20%;
+   
+} */
+/* .samplepicture{
     width:700px;
     
 }
@@ -16,7 +51,8 @@ img {
 }
 .sample{
     background-color: #FFC901;
-    width: 1000px;
+    width:90%;
+    height: 100vh;
    
 }
 /* .border{
