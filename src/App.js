@@ -1,5 +1,4 @@
 import logo from "./logo.svg";
-import "./App.css";
 import "./css/style.css"
 
 import Box from "@mui/material/Box";
