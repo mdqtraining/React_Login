@@ -9,19 +9,22 @@ import "./css/style.css"
 
 // import KeyIcon from '@mui/icons-material/Key';
 import LoginIcon from '@mui/icons-material/Login';
+import { SpeakerNotesOff } from "@mui/icons-material";
 
-
-const samplepicture =new URL("./images/first.jpg",import.meta.url)
+const samplepicture =new URL("./images/newedit3.jpg",import.meta.url)
+const untitled1 =new URL("./images/Untitled1.png",import.meta.url)
 
 function App() {
   return <>
- <body>
+ {/* <body> */}
        
-         <Box>
+         {/* <Box> */}
           <Grid container justifyContent='center' sx={{ textAlign: 'center' }} >
 
-    <Box className="sample"  sx={{ border:"1px solid black" ,borderColor:'#d2cbcb;' , borderRadius:'40px',':hover': {  boxShadow:2},m:6 }} >
-    {/* <nav className="navbar">
+    <Box className="sample"  sx={{ border:"1px solid black",mt:'10%' ,borderColor:'#d2cbcb;' , borderRadius:'40px',':hover': {  boxShadow:2},m:6 }} >
+   <Grid item>
+   
+    <nav className="navbar">
         <ul>
 
          <li className="active">Marketplace</li>
@@ -32,18 +35,25 @@ function App() {
         
 
         </ul>
-      </nav> */}
-    <Grid >
-      
-      <Grid justifyContent='center' sx={{ textAlign: 'center' }} >
-    <Grid className="samplepicture">
-      
+      </nav>
+      </Grid>
+   
+      {/* <Grid justifyContent='center' sx={{ textAlign: 'center' }}> */}
+        <Grid item>
+    <Grid  className="samplepicture">
+     
     <img  src={samplepicture}/>
- </Grid>
- </Grid>
-  <Grid sx={{pl:5}}>
 
- <Box  sx={{ border:"1px solid black",p:3,mt:'30%',borderColor:'#d2cbcb;',width:'210px',backgroundColor:'#C8C8C8', borderRadius:'20px',textAlign:"left"}} >
+    <img className="untitled"  src={ untitled1 }/>
+   
+ </Grid>
+ {/* <Grid className="box2">
+   
+    </Grid> */}
+    </Grid>
+   
+  <Grid item sx={{pl:5}}>
+     <Box  sx={{ border:"1px solid black",p:3,mt:'30%',borderColor:'#d2cbcb;',width:'210px',backgroundColor:'#C8C8C8', borderRadius:'20px',textAlign:"left"}} >
   <Box>
     <h2>Welcome Back</h2>
     <p>Please Enter Your Email and Password</p>
@@ -59,7 +69,7 @@ function App() {
                                
                                 />
                                 </Grid>
-                               
+                                
                                 <Grid container>
                                 <Grid sx={{pt:2}}>
                                     <Stack spacing={2} direction="row" >
@@ -85,17 +95,17 @@ function App() {
  </Grid>
 
  </Box>
- </Grid>
-  
+ {/* </Grid> */}
     </Grid>
-   
+  
     </Box>
           </Grid> 
-        </Box>
+        {/* </Box> */}
         
-        </body>
+        {/* </body> */}
       
         </>
 }
 
 export default App;
+   

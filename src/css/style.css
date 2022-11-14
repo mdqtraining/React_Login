@@ -31,13 +31,26 @@
 body{
     background-color:#C8C8C8;
 }
+/* .samplepicture{
+
+    
+
+
+} */
 
 
 
 
 img {
-   width: 85%;
+   width: 65%;
    height: 20%;
+   
+   /* border-radius:98% 0% 0% 100% / 0% 98% 98% 26%  ; */
+   /* border-bottom-left-radius: 30%;
+   border-bottom-right-radius:30px;
+   border-top-right-radius:30px;
+   border-top-left-radius:30px; */
+ 
    
 } 
 /* .samplepicture{
@@ -49,10 +62,27 @@ img {
  font-size: smaller;
 
 }
+.box2{
+    margin-bottom: 30%;
+
+
+}
 .sample{
     background-color: #FFC901;
     width:90%;
-    height: 100vh;
+    height: 120vh;
+    
    
+}
+.untitled{
+ width: 40%;
+height:60% ;
+border-radius: 50px 364px 50px 50px / 25px 150px 25px 25px;
+float: left;
+
+
+
+
+
 }
 
