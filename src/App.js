@@ -52,7 +52,7 @@ const theme1 = createTheme({
   },
 });
 
-// <box-2>
+
 function App() {
   return (
     <>
@@ -234,10 +234,9 @@ function App() {
                               </Button>
                               <Button
                                 disableElevation
-                                // variant={ 'contained' : 'text'}
                                 size="small"
                                 sx={{ color: "inherit" }}
-                                // onClick={(e) => handleChangeTime(e, false)}
+                           
                               >
                                 Year
                               </Button>
@@ -249,10 +248,6 @@ function App() {
                             <Grid item xs={6}>
                               <Grid container alignItems="center">
                                 <Grid item>
-                                  {/* {timeValue ? ( */}
-                                  {/* <Typography sx={{ fontSize: '2.125rem', fontWeight: 500, mr: 1, mt: 1.75, mb: 0.75 }}>
-                                                        $108
-                                                    </Typography> */}
 
                                   <Typography
                                     sx={{
@@ -302,7 +297,6 @@ function App() {
                         </Grid>
                       </Grid>
                     </Box>
-                    {/* </CardWrapper> */}
                   </CardContent>
                 </Card>
               </ThemeProvider>
@@ -420,13 +414,14 @@ function App() {
                           />
                         </ListItem>
                       </List>
-                      {/* </Box4> */}
+                     
                     </Typography>
                   </CardContent>
                 </Card>
               </ThemeProvider>
             </Grid>
           </Grid>
+           {/* </Box4> */}
           <Grid
             container
             direction="row"
@@ -466,39 +461,76 @@ function App() {
                 </CardContent>
               </Card>
             </Grid>
+           
             {/* box-6 */}
             <Grid item lg={4} sm={4} xl={4} xs={14} md={4} sx={{ py: 3 }}>
-              <Card sx={{ minWidth: 100, height: 200, ml: 4, borderRadius: 4 }}>
+              <Card sx={{ ml: 4,height:500,borderRadius: 4 }}>
                 <CardContent>
-                  <Typography variant="subtitle2">Popular Stocks</Typography>
+                  <Typography variant="subtitle2"><h1>Popular Stocks</h1></Typography>
                 </CardContent>
-                <ThemeProvider theme={theme1}>
-                  <Card
-                    sx={{
-                      Width: 10,
-                      height: 40,
-                      padding: 4,
-                      borderRadius: 4,
-                      justifyContent: "center",
-                      bgcolor: "box7.paper",
-                    }}
-                  >
-                    <CardContent>
-                      <Grid container direction="column">
-                        <Grid item>
-                          <Grid container justifyContent="space-between" >
-                            <Grid item sx={{mb:4}}>
-                              <h2>Igreen</h2>
-                            </Grid>
-                            <Grid item>
-                              <h2>$1832</h2>
-                            </Grid>
-                          </Grid>
-                        </Grid>
-                      </Grid>
+                <CardContent>
+                    <Grid item>
+                              <img alt="images" src={require('./images/smallchart.jpeg')} width={"100%"} height={"230%"}/>
+                              </Grid>
                     </CardContent>
-                  </Card>
-                </ThemeProvider>
+                    <Grid container  >
+                    <Grid item xs={12}>
+                    <Grid container  justifyContent="space-evenly" sx={{mt:4}}>
+                        <Grid item>
+                            <Typography variant="subtitle1" sx={{ color: theme.palette.secondary.dark }}>
+                               igreen
+                            </Typography>
+                        </Grid>
+                        <Grid item>
+                            <Typography  sx={{ color: theme.palette.grey[800] }}>
+                                $189.00
+                            </Typography>
+                        </Grid>
+                    </Grid>
+                </Grid>
+                <Grid item xs={12}>
+                    <Grid container alignItems="center" justifyContent="space-evenly">
+                        <Grid item>
+                            <Typography variant="subtitle1" sx={{ color: theme.palette.secondary.dark }}>
+                             techno
+                            </Typography>
+                        </Grid>
+                        <Grid item>
+                            <Typography  sx={{ color: theme.palette.grey[800] }}>
+                                $100.00
+                            </Typography>
+                        </Grid>
+                    </Grid>
+                </Grid>
+                <Grid item xs={12}>
+                    <Grid container alignItems="center" justifyContent="space-evenly">
+                        <Grid item>
+                            <Typography variant="subtitle1" sx={{ color: theme.palette.secondary.dark }}>
+                                Finery
+                            </Typography>
+                        </Grid>
+                        <Grid item>
+                            <Typography  sx={{ color: theme.palette.grey[800] }}>
+                                $200.00
+                            </Typography>
+                        </Grid>
+                    </Grid>
+                </Grid>
+                <Grid item xs={12}>
+                    <Grid container alignItems="center" justifyContent="space-evenly">
+                        <Grid item>
+                            <Typography variant="subtitle1" sx={{ color: theme.palette.secondary.dark }}>
+                                Finery
+                            </Typography>
+                        </Grid>
+                        <Grid item>
+                            <Typography sx={{ color: theme.palette.grey[800] }}>
+                                $200.00
+                            </Typography>
+                        </Grid>
+                    </Grid>
+                </Grid>
+                    </Grid>
               </Card>
             </Grid>
           </Grid>
